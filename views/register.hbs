@@ -1,0 +1,57 @@
+<style type="text/css">
+h1{
+  text-align: center;
+}
+.login{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.invalid{
+  color: red;
+  text-align: center;
+}
+label{
+  display: inline-block;
+  width: 200px;
+  margin-right: 30px;
+  text-align: right;
+}
+fieldset{
+  border: none;
+  width: 500px;
+  margin: 0px auto;
+}
+input[type=text]{
+  width: 200px;
+}
+.buttonContainer{
+  text-align: center;
+}
+.buttonContainer input[type="button"] {
+  vertical-align: middle;
+  width: 200px;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  margin: 2 2px;
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> {{title}} </title>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <div class="login">Username: <input type='text' placeholder='Username' id='UsernameBox'></div>
+  <div class="login">Password: <input type='text' placeholder='Password' id='PasswordBox'></div>
+  <div class="buttonContainer">
+    <input type='button' id="submit_registration_button" value='register' align="middle">
+  </div>
+  <div class="invalid" id="text-area"></div>
+  <script src='js/register/registerEventListener.js'></script>  
+  <script src='js/register/register.js'></script>
+</body>
+</html>

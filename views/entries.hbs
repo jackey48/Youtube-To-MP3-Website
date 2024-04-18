@@ -1,0 +1,33 @@
+<style>
+.buttonContainer{
+   text-align: left;
+}
+p{
+   white-space: pre-line;
+}
+.entry{
+   font-weight: bold;
+   color: green;
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> {{title}} </title>
+</head>
+<body>
+   <h1>{{title}}</h1>
+<div> 
+   {{#each videoEntries}} 
+      <p><span class="entry">Title:</span> {{this.title}}</br><span class="entry">URL:</span> {{this.url}}</p>
+      <p></p>
+   {{/each}} 
+</div>
+<div class="buttonContainer">
+    <input type="button" id='back_button' value="back">
+</div>
+
+<script src='js/entries/entriesEventListener.js'></script>  
+</body>
+</html>

@@ -1,0 +1,51 @@
+<style type="text/css">
+h1, h2{
+  text-align: center;
+}
+.textContainer{
+  text-align: center
+}
+.textContainer input[type=text]{
+  width: 500px;
+  vertical-align: middle;
+}
+.buttonContainer{
+  text-align: center;
+}
+.buttonContainer input[type="button"] {
+  vertical-align: middle;
+  width: 200px;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  margin: 2 2px;
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> {{title}} </title>
+</head>
+<body>
+   <h1>{{title}}</h1>
+   <h2>{{body}}</h2>
+   <div class="textContainer">
+    <input type='text' placeholder='' id='UrlBox'>
+   </div>
+   <div class="buttonContainer">
+    <input type="button" id='submit_url_button' value="download">
+   </div>
+   <div class="buttonContainer">
+    <input type="button" id='check_url_button' value="open video">
+   </div>
+   <div class="buttonContainer">
+    <input type="button" id='entries_button' value="Entries">
+   </div>
+
+   <script src='js/home/homeEventListener.js'></script>  
+   <script src='js/home/download.js'></script>
+   <script src='js/home/checkVideo.js'></script>
+   <script src="js/home/addEntry.js"></script>
+</body>
+</html>
